@@ -22,11 +22,11 @@ if __name__ == "__main__":
 
     user_name = user_info_list["name"]
 
-    completed = [todo for todo in todo_list if todo["completed"]]
-    total_n = len(todo_list)
-    completed_n = len(completed)
+    tasks_done = [task for task in todo_list if task["completed"]]
+    tasks_number = len(todo_list)
+    n = len(tasks_done)
 
-    print(f"Employee {user_name} is done with tasks {completed_n}/{total_n}")
+    print(f"Employee {user_name} is done with tasks ({n}/{tasks_done}):")
 
     for todo in todo_list:
-        print("    ", todo['title'])
+        print("     ", todo['title'])
