@@ -29,4 +29,4 @@ if __name__ == "__main__":
     print(f"Employee {user_name} is done with tasks ({completed_n}/{tn}):")
 
     for todo in todo_list:
-        print("     ", todo['title'])
+        print('\t', todo['title'])
