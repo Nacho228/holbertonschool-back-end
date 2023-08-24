@@ -4,6 +4,7 @@ Employee Info
 for a given employee ID, returns information
 about his/her TODO list progress."""
 
+import json
 import requests
 import sys
 
@@ -26,7 +27,8 @@ if __name__ == "__main__":
     tn = len(todo_list)
     completed_n = len(tasks_done)
 
-    print(f"Employee {user_name} is done with tasks ({completed_n}/{tn}):")
+    print("Employee {} is done with tasks({}/{}):"
+          .format(user_name, completed_n, tn))
 
     for todo in todo_list:
         print('\t', todo['title'])
