@@ -4,10 +4,10 @@ Employee Info
 for a given employee ID, returns information
 about his/her TODO list progress."""
 
+import csv
 import json
 import requests
 import sys
-import csv
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
