@@ -13,7 +13,7 @@ if __name__ == "__main__":
     if len(sys.argv) < 2:
         exit()
 
-    u = sys.argv[1]
+    u = int(sys.argv[1])
 
     r = requests.get(f'https://jsonplaceholder.typicode.com/users/{u}/todos')
     user_info = requests.get(f'https://jsonplaceholder.typicode.com/users/{u}')

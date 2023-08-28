@@ -27,7 +27,7 @@ if __name__ == "__main__":
     tn = len(todo_list)
     completed_n = len(tasks_done)
 
-    file_name = file_name = '{}.json'.format(user_data.get('id'))
+    file_name = '{}.json'.format(user_data.get('id'))
 
     with open(file_name, mode="a", encoding="utf-8") as f:
         f.write(json.dumps({u: [{
